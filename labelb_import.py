@@ -5,8 +5,10 @@ import configparser
 config_object = configparser.ConfigParser()
 config_object.read('configfile.ini')
 data = config_object['Data']
-project_key = data['Project']
-password = data['ApiKey']
+project_key = data['project']
+password = data['api-key']
+start_date = data['start_date']
+end_date = data['end_date']
 
 # import a list of labels
 lb = labelbox.Client(api_key=password)
