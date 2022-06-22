@@ -13,7 +13,7 @@ end_date = data['end_date']
 # import a list of labels
 lb = labelbox.Client(api_key=password)
 project = lb.get_project(project_key)
-labels = project.export_labels(download=True, start="start_date", end="end_date")
+labels = project.export_labels(download=True, start=start_date, end=end_date)
 
 
 
