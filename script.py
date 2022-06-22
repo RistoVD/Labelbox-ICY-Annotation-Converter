@@ -6,5 +6,5 @@ for i in labels:
     a = LabelToObject(i)
     a.find_rois()
     my_print = XmlDoc(a)
-    with open('{}.xml'.format(a.name), 'w') as test_doc:
+    with open('OUTPUT/{}.xml'.format(a.name), 'w') as test_doc:
         my_print.display(file=test_doc)
